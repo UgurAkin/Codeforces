@@ -14,6 +14,10 @@ int main(){
 	
 	string result = "YES";
 	for(int i = 0; i < n; i++){
+		if(numTeams[i] < 0){
+			result = "NO";
+			break;
+		}
 		if(numTeams[i] % 2 != 0){
 			if(i == n){
 				result = "NO";
