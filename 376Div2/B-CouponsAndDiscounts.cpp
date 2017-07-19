@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int LIMIT = 10000;
+int LIMIT = 200000;
 
 int main(){
 	int n;
@@ -19,7 +19,7 @@ int main(){
 			break;
 		}
 		if(numTeams[i] % 2 != 0){
-			if(i == n){
+			if(i == n-1){
 				result = "NO";
 			}
 			else{
